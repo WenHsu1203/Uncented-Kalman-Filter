@@ -69,6 +69,10 @@ public:
   double NIS_laser_;
   double NIS_radar_;
 
+  MatrixXd R_LIDAR_;
+
+  MatrixXd R_RADAR_;
+
 
 
   /**

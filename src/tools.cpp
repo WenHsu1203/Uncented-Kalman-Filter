@@ -13,7 +13,6 @@ VectorXd Tools::CalculateRMSE(const vector<VectorXd> &estimations,
                               const vector<VectorXd> &ground_truth) 
 {
     // Calculate the RMSE
-    cout << "Start RMSE Calculation."<<endl;
     VectorXd rmse(4);
     rmse.fill(0.0);
     if (estimations.size() != ground_truth.size() || estimations.size()==0)
@@ -26,6 +25,5 @@ VectorXd Tools::CalculateRMSE(const vector<VectorXd> &estimations,
     }
     rmse = rmse / estimations.size();
     rmse = rmse.array().sqrt();
-    cout << "End RMSE Calculation."<<endl;
     return rmse;
 }
