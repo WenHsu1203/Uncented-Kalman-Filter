@@ -63,14 +63,13 @@ public:
 
   ///* Sigma point spreading parameter
   double lambda_;
-
+  ///* For storing the previous time_stamp
   long long time_us_;
-
+  ///* NIS for laser and radar for tuning
   double NIS_laser_;
   double NIS_radar_;
-
+  ///* Measurement Covariance Matrix
   MatrixXd R_LIDAR_;
-
   MatrixXd R_RADAR_;
 
 
